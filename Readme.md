@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Грицук](https://up.htmlacademy.ru/adaptive/9/user/199079).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Рубец] (https://htmlacademy.ru/profile/id41580).
 
 ---
 
