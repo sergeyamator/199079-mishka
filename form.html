@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <img src="http://placehold.it/150x100" width="80" height="30">
+        </div>
+        <nav class="main-nav  main-nav__closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">Каталог товаров</li>
+              <li class="main-nav__item">Вязание на заказ</li>
+              <li class="main-nav__item">Поиск по сайту</li>
+              <li class="main-nav__item">Корзина:пока пуста</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="order">
+      <div class="order__title">
+        <div class="order__wrapper">
+          <h1>Вязание на заказ</h1>
+        </div>
+      </div>
+      <div class="order__wrapper">
+        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order__form">
+          <fieldset class="order__type-filter">
+            <legend class="order__input-legend">Тип</legend>
+            <label class="order__label-radio"><input type="radio" name="type"><span></span>Аксессуар для интерьера</label>
+            <label class="order__label-radio"><input type="radio" name="type"><span></span>Детская игрушка</label>
+          </fieldset>
+          <fieldset class="order__color-filter">
+            <legend class="order__input-legend">Цвет</legend>
+            <label class="order__label-checkbox"><input type="checkbox"><span></span>Белый</label>
+            <label class="order__label-checkbox"><input type="checkbox"><span></span>Серый</label>
+            <label class="order__label-checkbox"><input type="checkbox"><span></span>Тиффани</label>
+            <label class="order__label-checkbox"><input type="checkbox"><span></span>Черный</label>
+            <label class="order__label-checkbox"><input type="checkbox"><span></span>Розовый</label>
+            <label class="order__label-checkbox"><input type="checkbox"><span></span>Оранжевый</label>
+          </fieldset>
+          <fieldset class="order__users-data">
+            <legend class="order__input-legend">ФИО</legend>
+            <label class="order__label-name">Имя:<input type="text" placeholder="Введите ваше имя"></label>
+            <label class="order__label-surname">Фамилия:<input type="text" placeholder="Укажите фамилию"></label>
+            <label class="order__label-patronymic">Отчество:<input type="text" placeholder="Отчество, если желаете"></label>
+          </fieldset>
+          <label class="order__label-tel">ТЕЛ<input type="tel" placeholder="+7 ХХХ ХХ ХХ*"></label>
+          <label class="order__label-email">E-MAIL<input type="email" placeholder="Ваш Email*"></label>
+          <label class="order__label-textarea">ДОП<textarea placeholder="Опишите все ваши пожелания к заказу"></textarea></label>
+          <small class="order__legend"><sup>*</sup>Поля обязательны для заполнения</small>
+          <button class="order__send-order  btn" type="submit">Отправить заказ</button>
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="social-links">
+          <ul class="social-links__list">
+            <li class="social-links__item"><a href="#">Инстаграмм</a></li>
+            <li class="social-links__item"><a href="#">Фэйсбук</a></li>
+            <li class="social-links__item"><a href="#">Твиттер</a></li>
+          </ul>
+        </div>
+        <p class="page-footer__copyright">
+          Разработано:
+          <a href="#"><img src="http://placehold.it/150x100" width="20" height="40"></a>
+        </p>
+      </div>
+    </footer>
+    <div class="modal-form">
+      <h3 class="modal-form__title">Добавить в корзину</h3>
+      <p>Выберите размер:</p>
+      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>S</label>
+      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>M</label>
+      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>L</label>
+      <button class="modal-form__add btn">Добавить</button>
+    </div>
+  </body>
+</html>
