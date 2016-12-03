@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -15,7 +16,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item"> <a href="#">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+              <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
               <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
               <li class="main-nav__item"><a href="#">Корзина:пока пуста</a></li>
             </ul>
@@ -46,8 +47,8 @@
           </fieldset>
           <fieldset class="order__users-data">
             <legend class="order__input-legend">ФИО</legend>
-            <label class="order__label-name">Имя:<input type="text" placeholder="Введите ваше имя"></label>
-            <label class="order__label-surname">Фамилия:<input type="text" placeholder="Укажите фамилию"></label>
+            <label class="order__label-name">Имя:<input type="text" placeholder="Введите ваше имя*"></label>
+            <label class="order__label-name">Фамилия:<input type="text" placeholder="Укажите фамилию*"></label>
             <label class="order__label-patronymic">Отчество:<input type="text" placeholder="Отчество, если желаете"></label>
           </fieldset>
           <label class="order__label-tel">ТЕЛ<input type="tel" placeholder="+7 ХХХ ХХ ХХ*"></label>
@@ -73,13 +74,5 @@
         </p>
       </div>
     </footer>
-    <form class="modal-form" action="#" method="post">
-      <h3 class="modal-form__title">Добавить в корзину</h3>
-      <p>Выберите размер:</p>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>S</label>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>M</label>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>L</label>
-      <button class="modal-form__add btn" type="submit">Добавить</button>
-    </form>
   </body>
 </html>

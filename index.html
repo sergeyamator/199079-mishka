@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,7 +15,7 @@
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item"> <a href="#">Каталог товаров</a></li>
+              <li class="main-nav__item"> <a href="catalog.html">Каталог товаров</a></li>
               <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
               <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
               <li class="main-nav__item"><a href="#">Корзина:пока пуста</a></li>
@@ -62,7 +63,7 @@
             <td class="best-product__price" colspan="2">Цена: 990руб.</td>
           </tr>
         </table>
-        <a class="best-product__order btn">Заказать</a>
+        <a class="best-product__order btn" href="#">Заказать</a>
       </div>
     </section>
     <section class="about">
@@ -92,8 +93,8 @@
             <cite class="reviews__author">Анастасия Красильникова</cite>
             <cite class="reviews__author-nick">@misssssiskras</cite>
           </blockquote>
-          <a class="reviews__prev">Предыдущий отзыв</a>
-          <a class="reviews__next">Следующий отзыв</a>
+          <a class="reviews__prev" href="#">Предыдущий отзыв</a>
+          <a class="reviews__next" href="#">Следующий отзыв</a>
         </div>
         <a class="reviews__write btn" href="#">Написать</a>
       </div>
@@ -104,7 +105,7 @@
         <table class="contacts__table">
           <tr>
             <td class="contacts__field">e-mail:</td>
-            <td class="contacts__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            <td class="contacts__value"><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
             <td class="contacts__field">адрес:</td>
@@ -133,7 +134,7 @@
       </div>
     </footer>
     <form class="modal-form" class="modal-form" action="#" method="post">
-      <h3 class="modal-form__title">Добавить в корзину</h3>
+      <h2 class="modal-form__title">Добавить в корзину</h2>
       <p>Выберите размер:</p>
       <label class="modal-form__label-input"><input type="radio" name="size"><span></span>S</label>
       <label class="modal-form__label-input"><input type="radio" name="size"><span></span>M</label>
