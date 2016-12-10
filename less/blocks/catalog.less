@@ -5,9 +5,37 @@
 
 }
 .catalog__title-container{
+   .container();
   font-family: "OpenSans Bold",sans-serif;
   font-size: 27px;
   line-height: 30px;
   margin-top: 65px;
   margin-bottom: 72px;
+  text-align: center;
+}
+
+.order__title-container{
+
+  margin-top: 65px;
+  margin-bottom: 72px;
+
+}
+
+.catalog__wrapper,
+.production-process__wrapper {
+  .container();
+}
+@media @tablet-widths {
+  .catalog-item {
+    display: flex;
+  }
+}
+@media @desktop-widths {
+  .catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .catalog-item {
+    display: block;
+  }
 }

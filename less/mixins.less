@@ -1,0 +1,21 @@
+.hidden {
+  position: absolute;
+  top: -9999px;
+}
+
+.container() {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+
+  @media @tablet-widths {
+    width: 668px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+  }
+}

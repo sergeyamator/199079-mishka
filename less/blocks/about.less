@@ -1,9 +1,31 @@
 .about{
   margin-bottom:58px;
+
+}
+.about__wrapper {
+  .container();
+}
+.about__features{
+  padding: 0;
+  margin: 0;
 }
 .about__feature{
   font-family: "OpenSans Bold",sans-serif;
   font-size: 17px;
   list-style: none;
+}
+.about__icon{
+  fill:#63d1bb;
+  fill-rule: evenodd;
+  display: block;
 
+}
+@media @tablet-widths {
+  .about__features{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__feature {
+    flex-basis:334px;
+  }
 }

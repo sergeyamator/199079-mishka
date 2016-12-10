@@ -1,6 +1,10 @@
 .reviews{
   padding-bottom:40px;
   margin-bottom: 45px;
+
+}
+.reviews__wrapper{
+  .container();
 }
 .reviews p{
   line-height: 30px;
@@ -16,4 +20,22 @@
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
+}
+.reviews__prev,
+.reviews__next{
+  display: block;
+  padding: 15px 35px 10px 35px;
+  border: 1px solid #ececec;
+  flex-grow: 1;
+
+}
+.reviews__controls{
+  display: flex;
+  margin-bottom: 35px;
+}
+@media @tablet-widths {
+  .reviews{
+    background: url("../../img/review@1x.jpg") -40px 0 no-repeat;
+  }
+
 }

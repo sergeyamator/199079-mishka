@@ -6,7 +6,52 @@
   font-size: 17px;
   line-height: 24px;
 }
-.production-process p{
+.production-process__decription {
+  margin:0 33px;
+}
+.production-process__decription p{
   font-size: 13px;
   line-height: 24px;
+
+}
+.production-process__order {
+  width:100%;
+}
+@media @mobile-widths-only {
+  .production-process__wrapper {
+    position: relative;
+    padding-top: 1px;
+  }
+  .production-process__title {
+    position: absolute;
+    top:0;
+  }
+  .production-process__video {
+    margin-top: 100px;
+  }
+}
+ @media @tablet-widths {
+   .production-process__order {
+     width:583px;
+     margin: 0 auto;
+   }
+   .production-process__decription {
+      margin:0 43px;
+   }
+}
+@media @desktop-widths {
+.production-process__wrapper {
+  display: flex;
+  }
+  .production-process__video video{
+    width: 680px;
+    height: 456px;
+  }
+   .production-process__order {
+     width:228px;
+   }
+  .production-process__decription {
+    margin-left: 79px;
+    margin-right: 57px;
+  }
 }
