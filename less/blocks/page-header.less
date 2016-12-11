@@ -11,16 +11,47 @@
   fill-rule: evenodd;
 }
 .page-header__logo-wrapper{
-  display: inline-block;
   margin-left: 85px;
   margin-right: 64px;
   margin-top: 20px;
   margin-bottom: 13px;
 }
+.page-header__logo-tablet,
+ .page-header__logo-desktop
+{
+  display: none;
+}
   @media @tablet-widths {
     .page-header__wrapper {
       display: flex;
     }
-
-
+    .page-header__delivery {
+    position: absolute;
+    right: 50px;
+    top: 93px;
+   }
+    .page-header__logo {
+      display: none;
+    }
+    .page-header__logo-tablet {
+      display: block;
+    }
+    .page-header__logo-wrapper {
+      margin-left: 0;
+      margin-top: 22px;
+      margin-bottom: 21px;
+    }
   }
+@media @desktop-widths {
+  .page-header__logo-tablet {
+    display: none;
+  }
+  .page-header__logo-desktop {
+    display: block;
+  }
+  .page-header__logo-wrapper {
+    margin: 0 auto;
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+}
