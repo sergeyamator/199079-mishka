@@ -1,9 +1,11 @@
 .best-product {
-  padding-bottom: 35px;
+
 
 }
 .best-product__wrapper {
   .container();
+  position: relative;
+  padding-bottom: 160px;
 
 }
 .best-product__title {
@@ -26,6 +28,7 @@
   border-collapse: collapse;
   line-height:20px;
   margin-bottom: 27px;
+  width: 100%;
 }
 .best-product__field,
 .best-product__value {
@@ -37,59 +40,87 @@
   font-family: "OpenSans Bold",sans-serif;
   font-size: 17px;
   line-height: 24px;
-  display: block;
   text-align: center;
-  margin-bottom: 27px;
+  display: block;
 }
-.best-product__photo {
-  margin-bottom: 16px;
+
+@media @mobile-widths-only {
+  .best-product__price{
+    position: absolute;
+    bottom: 113px;
+    left:0;
+    right: 0;
+    font-size: 20px;
+  }
+  .best-product__order {
+    position: absolute;
+    bottom:36px;
+  }
 }
 @media @tablet-widths {
-   .best-product__wrapper {
-     height: 509px;
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: column;
+  .best-product__price{
+    margin-bottom: 35px;
+
   }
-  .best-product__photo {
-    order: 2;
+  .best-product__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  .best-product__subtitle {
-    order: 1;
-    margin-top: 50px;
-    margin-bottom: 73px;
-    align-self: flex-end;
+  .best-product__description {
+    width: 43%;
+    p {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom:34px;
+    }
   }
   .best-product__title {
-    font-size:43px;
-    line-height: 50px;
+    margin-bottom: 35px;
+  }
+  .best-product__subtitle {
+    text-align: center;
+    width: 11%;
+    margin: auto;
+    margin-right: 27px;
+  }
+  .best-product__photo{
+    margin-top: 24px;
+      img {
+      width:334px;
+      height: auto;
+    }
+  }
+  .best-product__order {
+    width:100%;
   }
   .best-product__table {
-    width:334px;
-    margin-top: 10px;
-  }
-  .best-product__price {
-    width:290px;
+    margin-bottom:54px;
   }
 }
 @media @desktop-widths {
-  .best-product__wrapper {
-    position: relative;
+  .best-product__subtitle {
+    margin-right: 45px;
+    margin-left: 4px;
+    margin-top: 134px;
   }
   .best-product__title {
-    position: relative;
-    margin-left: 175px;
-
-  }
-  .best-product__subtitle{
     position: absolute;
-    left: 0;
-
+    left:208px;
+    top:122px;
+    margin: 0;
   }
-  .best-product__table,
-  .best-product__price{
-    margin-left: 175px;
+  .best-product__description {
+    margin-top:232px;
+    margin-right: auto;
+    width: 28%;
   }
-
+  .best-product__photo {
+    margin-top:70px;
+      img {
+        width:525px;
+        height: auto;
+    }
+  }
 
 }
