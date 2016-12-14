@@ -46,26 +46,32 @@
         <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
       </symbol>
     </svg>
-    <header class="page-header outline">
+    <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__logo-wrapper outline">
+        <div class="page-header__logo-wrapper">
           <svg class="page-header__logo" width="85.589px" height="35.034px"><use xlink:href="#mishka"/></svg>
           <img class="page-header__logo-tablet" src="img/mishka-logo-tablet.png" width="113" height="46" alt="mishka">
           <img class="page-header__logo-desktop" src="img/mishka-logo-desktop.png" width="149" height="72" alt="mishka">
         </div>
-        <nav class="main-nav  main-nav__closed  main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-              <li class="main-nav__item"><a href="#"><svg class="main-nav__icon-search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"/></svg><span>Поиск по сайту</span></a></li>
-              <li class="main-nav__item"><a href="#"><svg class="main-nav__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg>Корзина:пока пуста</a></li>
-              <li class="main-nav__item"><a href="#">Новые поступления</a></li>
-              <li class="main-nav__item"><a href="#">Распродажа</a></li>
-            </ul>
-          </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
         </nav>
+        <nav class="main-nav-desktop">
+          <ul class="main-nav-desktop__list">
+            <li class="main-nav-desktop__item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav-desktop__item"><a href="#">Распродажа</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <ul class="user-block__list">
+            <li class="user-block__item user-block__item-search"><a href="#"><svg class="user-block__icon-search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"/></svg><span class="user-block__search">Поиск по сайту</span></a></li>
+            <li class="user-block__item"><a href="#"><svg class="user-block__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg>Корзина:пока пуста</a></li>
+          </ul>
+        </div>
         <span class="page-header__delivery">Бесплатная доставка по России</span>
       </div>
     </header>
@@ -76,10 +82,10 @@
       <div class="catalog__wrapper">
         <article class="catalog-item">
           <div class="catalog-item__photo">
-            <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
           </div>
           <div class="catalog-item__description">
-            <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+            <a class="catalog-item__title" href="#">Зайчик-попрыгайчик</a>
             <p>Рост 30 см, вес 200 г</p>
             <div class="catalog-item__price-block">
               <span>1200 руб.</span>
@@ -89,10 +95,10 @@
         </article>
         <article class="catalog-item">
           <div class="catalog-item__photo">
-            <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+            <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья"></a>
           </div>
           <div class="catalog-item__description">
-            <h2 class="catalog-item__title">Корзинка для белья</h2>
+            <a class="catalog-item__title" href="#">Корзинка для белья</a>
             <p> Диаметр 15 см, высота 10 см</p>
             <div class="catalog-item__price-block">
               690 руб.
@@ -102,10 +108,10 @@
         </article>
         <article class="catalog-item">
           <div class="catalog-item__photo">
-            <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+            <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
           </div>
           <div class="catalog-item__description">
-            <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+            <a class="catalog-item__title" href="#">Большая корзинка для игрушек</a>
             <p>Диаметр 30 см, высота 30 см</p>
             <div class="catalog-item__price-block">
                 1500 руб.
@@ -148,13 +154,18 @@
         </div>
       </div>
     </footer>
-    <!--<form class="modal-form" action="#" method="post">
-      <h3 class="modal-form__title">Добавить в корзину</h3>
+    <form class="modal-form" action="#" method="post">
+      <h2 class="modal-form__title">Добавить в корзину</h2>
       <p>Выберите размер:</p>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>S</label>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>M</label>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>L</label>
-      <button class="modal-form__add btn" type="submit">Добавить</button>
-    </form>-->
+      <div class="modal-form__labels-wrapper">
+        <label class="modal-form__label-input"><input type="radio" name="size" checked><span class="modal-form__indicator">S</span></label>
+        <label class="modal-form__label-input"><input type="radio" name="size"><span class="modal-form__indicator">M</span></label>
+        <label class="modal-form__label-input"><input type="radio" name="size"><span class="modal-form__indicator">L</span></label>
+      </div>
+
+      <button class="modal-form__add  btn" type="submit">Добавить</button>
+    </form>
+    <div class="modal-overlay">
+    </div>
   </body>
 </html>

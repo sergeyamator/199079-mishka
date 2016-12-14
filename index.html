@@ -110,20 +110,25 @@
           <img class="page-header__logo-tablet" src="img/mishka-logo-tablet.png" width="113" height="46" alt="mishka">
           <img class="page-header__logo-desktop" src="img/mishka-logo-desktop.png" width="149" height="72" alt="mishka">
         </div>
-        <nav class="main-nav  main-nav__closed  main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-              <li class="main-nav__item"><a href="#"><svg class="main-nav__icon-search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"/></svg><span>Поиск по сайту</span></a></li>
-              <li class="main-nav__item"><a href="#"><svg class="main-nav__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg>Корзина:пока пуста</a></li>
-              <li class="main-nav__item"><a href="#">Новые поступления</a></li>
-              <li class="main-nav__item"><a href="#">Распродажа</a></li>
-            </ul>
-          </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
         </nav>
-
+        <nav class="main-nav-desktop">
+          <ul class="main-nav-desktop__list">
+            <li class="main-nav-desktop__item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav-desktop__item"><a href="#">Распродажа</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <ul class="user-block__list">
+            <li class="user-block__item user-block__item-search"><a href="#"><svg class="user-block__icon-search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"/></svg><span class="user-block__search">Поиск по сайту</span></a></li>
+            <li class="user-block__item"><a href="#"><svg class="user-block__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg>Корзина:пока пуста</a></li>
+          </ul>
+        </div>
         <span class="page-header__delivery">Бесплатная доставка по России</span>
       </div>
     </header>
@@ -239,14 +244,19 @@
         </div>
       </div>
     </footer>
-    <!-- <form class="modal-form" action="#" method="post">
+    <form class="modal-form" action="#" method="post">
       <h2 class="modal-form__title">Добавить в корзину</h2>
       <p>Выберите размер:</p>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>S</label>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>M</label>
-      <label class="modal-form__label-input"><input type="radio" name="size"><span></span>L</label>
+      <div class="modal-form__labels-wrapper">
+        <label class="modal-form__label-input"><input type="radio" name="size" checked><span class="modal-form__indicator">S</span></label>
+        <label class="modal-form__label-input"><input type="radio" name="size"><span class="modal-form__indicator">M</span></label>
+        <label class="modal-form__label-input"><input type="radio" name="size"><span class="modal-form__indicator">L</span></label>
+      </div>
+
       <button class="modal-form__add  btn" type="submit">Добавить</button>
-    </form>-->
+    </form>
+    <div class="modal-overlay">
+    </div>
   <script src="js/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJgIgVLopcrzB2-VEFmirPY_DiF58PJ3c&signed_in=true&callback=initMap"></script>
   </body>

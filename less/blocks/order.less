@@ -151,8 +151,8 @@
   margin-bottom: 15px;
   display: block;
 }
-  .order__label-tel + input[type="tel"],
-  .order__label-email + input[type="email"],
+.order__label-tel + input[type="tel"],
+.order__label-email + input[type="email"],
 .order__label-textarea + textarea {
   margin-bottom: 15px;
 }
@@ -169,12 +169,12 @@
   outline: none;
 
 }
-  .order__labels-wrapper,
+.order__labels-wrapper,
 
-  .order__label-tel + input[type="tel"],
-  .order__label-email + input[type="email"],
-  .order__label-textarea + textarea {
-    .labels-wrapper();
+.order__label-tel + input[type="tel"],
+.order__label-email + input[type="email"],
+.order__label-textarea + textarea {
+.labels-wrapper();
 }
 
 @media @mobile-widths-only {
@@ -205,9 +205,12 @@
 
 }
 @media @tablet-widths {
+  .order {
+    margin-top: -54px;
+  }
   .order p{
-  font-size: 17px;
-  line-height: 30px;
+    font-size: 17px;
+    line-height: 30px;
   }
   .order__type-filter,
   .order__color-filter,
