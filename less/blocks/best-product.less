@@ -96,31 +96,35 @@
   }
   .best-product__table {
     margin-bottom:54px;
+
   }
 }
 @media @desktop-widths {
+  .best-product__title {
+    margin-right: 350px;
+    margin-top: 122px;
+  }
   .best-product__subtitle {
     margin-right: 45px;
     margin-left: 4px;
     margin-top: 134px;
-  }
-  .best-product__title {
-    position: absolute;
-    left:208px;
-    top:122px;
-    margin: 0;
-  }
-  .best-product__description {
-    margin-top:232px;
-    margin-right: auto;
-    width: 28%;
+    order: -2;
   }
   .best-product__photo {
+    position: absolute;
+    right: 0;
     margin-top:70px;
+    z-index: -100;
       img {
         width:525px;
         height: auto;
     }
   }
+  .best-product__description {
+    margin-left: 175px;
+    margin-right: auto;
+    width: 28%;
+  }
+
 
 }

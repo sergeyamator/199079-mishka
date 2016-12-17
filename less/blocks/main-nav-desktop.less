@@ -1,0 +1,34 @@
+.main-nav-desktop__item a {
+  display: block;
+  padding: 15px;
+  font-family: "OpenSans Bold",sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: -1px;
+  position: relative;
+}
+.main-nav-desktop__item a:hover {
+  color: rgba(0,0,0,0.6);
+}
+.main-nav-desktop__item a:active {
+  color: rgba(0,0,0,0.3);
+}
+@media @desktop-widths {
+  .main-nav-desktop {
+    display: block;
+    width:330px;
+
+  }
+  .main-nav-desktop__item a {
+    font-size: 15px;
+  }
+  .main-nav-desktop__item:nth-child(1) a {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+  .main-nav-desktop__item:nth-child(2) a {
+    padding-left: 30px;
+  }
+}

@@ -102,16 +102,19 @@
           <rect x="-11.34" y="-28.346" fill="#231F20" width="3.805" height="81.691"/>
         </g>
       </symbol>
+      <symbol id="logo-footer">
+        <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAiCAMAAACayFwqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAACSUWGxAAAAEHRSTlMAYN/vML+AUBBwryBAz4+fDwva1QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAL9SURBVEjH5ZfLYq0gDEUFJCKg8P9fWyEPgtrT3sEdlUmPPLJCdgJ0WV6bsdWty39vvtYKfxCzAQT5CHv06R8xnj/WvAPsGa2FnIOaGK+JWShHrUf4jf1gYCXM2TtycZVa6zi12atV9X2jpAzgfTQ4VpwzMmSuVaWFwnvA0VpduaZ3jlFmr3UtrBpT1O9cLHsXecxOwYpvMVkdqiVmdwxrM7aT5RHodNmJkNfUrNcWHqf96asGdFnHZ3NgUxhAoypXhkzNp4KdDoPQ14naoX+1H3C0zubgwRm1p+W2G6sxabh0DF95HONHFb8xxuDfTJ+z5BuHqOpcKeQ3LoZXTBkidrv5O4x4T0Mnx0JtRif5jKlBpKluGAk/YoAxYzPdZFLzC/3lbFlFKN6GCugNk1AlxqjNLNo3rnPCHCwr/tQYXY09IKcYy6jmvJmkdxNnTPf5qDdtnhgJEg3RRDMCPy/i+VAlCVJ9xcR3jO3ho4k9d+AXGBcoZhOm7bla31s/iQcGVepJkhObEIxRGAtZMNeSY8RvJY8S93XRAi47cjYAVp0+hU2MfMUVLAm61wZcL3nesHi05qutOVJgoepGGBUR3ufcPGK6gu342Rlj6+1ei1hRIEG0yHW40pmxnZ5dW4bT+8JnZ8cEvlMSY6Z7Tcox9emgxfW8L0+VrfUbImMfqW8lS+COQa3VUTlhDspp8wljWbb4PWa5Y9QRXV2rRsfJ/4bR9XUZ+IxJCqOOaKySgjM+YgKl8hOT8ImRhtUH5hwd8BmDXi0PzGopEhnduGGCTkm+ej9hAIW8Y4CdTUMb/y6WJIHGcOoyxth+mjBmV3RQZxhI2j4xvSz8Tdcbhho9YLhM+u24SdGB4N8wfTLV1h2zzRh+QVGZ8IOGEmnXXqE2YwJFaJ8wgXa/zxi52+mIEqzBR1GWoG2j4ORGOuT8OhfRy3YvzsNvA8O34FpdFI3o/MvUv4ng0Pyw4+y70Ne/RdejVi72lF+f7qdeteDrtrkd98f0bJ7/aKW8vLYvWOVZAGBRYuIAAAAASUVORK5CYII=" width="102" height="34"/>
+      </symbol>
     </svg>
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
           <svg class="page-header__logo" width="85.589px" height="35.034px"><use xlink:href="#mishka"/></svg>
           <img class="page-header__logo-tablet" src="img/mishka-logo-tablet.png" width="113" height="46" alt="mishka">
           <img class="page-header__logo-desktop" src="img/mishka-logo-desktop.png" width="149" height="72" alt="mishka">
         </div>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="main-nav">
+        <button class="btn-toggle btn-toggle--closed btn-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
@@ -123,7 +126,7 @@
             <li class="main-nav-desktop__item"><a href="#">Распродажа</a></li>
           </ul>
         </nav>
-        <div class="user-block">
+        <div class="user-block user-block--closed user-block--nojs">
           <ul class="user-block__list">
             <li class="user-block__item user-block__item-search"><a href="#"><svg class="user-block__icon-search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"/></svg><span class="user-block__search">Поиск по сайту</span></a></li>
             <li class="user-block__item"><a href="#"><svg class="user-block__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg>Корзина:пока пуста</a></li>
@@ -132,7 +135,7 @@
         <span class="page-header__delivery">Бесплатная доставка по России</span>
       </div>
     </header>
-  <section class="main-content">
+    <section class="main-content">
     <div class="main-content__wrapper">
       <h1 class="main-content__title">Милые штуки ручной <br> работы для дома</h1>
     </div>
@@ -143,7 +146,6 @@
       </ul>
     </nav>
     </section>
-
     <section class="best-product">
       <div class="best-product__wrapper">
         <h2 class="best-product__title">Вязаные корзинки</h2>
@@ -238,10 +240,7 @@
             <li class="social-links__item"><a href="#"><svg class="social-links__twitter" width="23.494px" height="20.168px"><use xlink:href="#twitter"/></svg><span class="visually-hidden">Твиттер</span></a></li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
-          <span>Разработано:</span>
-          <a href="#"><svg class="page-footer__logo-copyright" width="40" height="47"><use xlink:href="#htmlacademy"/></svg></a>
-        </div>
+        <a href="#" class="page-footer__copyright"><span>Разработано:</span><svg class="page-footer__logo-copyright" width="40" height="47"><use xlink:href="#htmlacademy"/></svg></a>
       </div>
     </footer>
     <form class="modal-form" action="#" method="post">
@@ -257,6 +256,35 @@
     </form>
     <div class="modal-overlay">
     </div>
+  <script>
+    var mainNav=document.querySelector('.main-nav');
+    var btnToggle=document.querySelector('.btn-toggle');
+    var userBlock=document.querySelector('.user-block');
+    var pageHeader=document.querySelector('.page-header');
+    mainNav.classList.remove('main-nav--nojs');
+    userBlock.classList.remove('user-block--nojs');
+    pageHeader.classList.remove('page-header--nojs');
+    btnToggle.classList.remove('btn-toggle--nojs');
+
+    btnToggle.addEventListener('click', function () {
+      if (mainNav.classList.contains('main-nav--closed')) {
+        mainNav.classList.add('main-nav--opened');
+        mainNav.classList.remove('main-nav--closed');
+        btnToggle.classList.add('btn-toggle--opened');
+        btnToggle.classList.remove('btn-toggle--closed');
+        userBlock.classList.add('user-block--opened');
+        userBlock.classList.remove('user-block--closed');
+      }
+      else {
+        mainNav.classList.add('main-nav--closed');
+        mainNav.classList.remove('main-nav--opened');
+        btnToggle.classList.add('btn-toggle--closed');
+        btnToggle.classList.remove('btn-toggle--opened');
+        userBlock.classList.add('user-block--closed');
+        userBlock.classList.remove('user-block--opened');
+      }
+    });
+  </script>
   <script src="js/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJgIgVLopcrzB2-VEFmirPY_DiF58PJ3c&signed_in=true&callback=initMap"></script>
   </body>

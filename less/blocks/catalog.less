@@ -22,9 +22,16 @@
 
 }
 
-.catalog__wrapper,
-.production-process__wrapper {
+.catalog__wrapper {
   .container();
+}
+@media @mobile-widths-only {
+  .catalog {
+    margin-top: 78px;
+  }
+  .page-header--nojs + .catalog {
+    margin-top: 0;
+  }
 }
 @media @tablet-widths {
   .catalog-item {

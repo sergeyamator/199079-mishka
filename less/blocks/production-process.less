@@ -1,8 +1,16 @@
+.production-process__wrapper {
+  .container();
+  padding: 0;
+}
+
 .production-process{
   padding-bottom:33px;
   margin-bottom:60px;
 }
 .production-process__wrapper {
+  display: flex;
+  flex-direction: column;
+
 
 }
 
@@ -10,22 +18,61 @@
   font-size: 17px;
   line-height: 24px;
 }
-.production-process__decription {
+/*.production-process__decription {
   padding:0 33px;
   padding-top: 1px;
   border:1px solid #ececec;
   padding-bottom: 29px;
-}
-.production-process__decription p{
+}*/
+.production-process__decription {
   font-size: 13px;
   line-height: 24px;
+  margin-left: 33px;
+  margin-right: 33px;
 
 }
 .production-process__video {
+  height: 150px;
 
   position: relative;
 }
-.production-process__video::before {
+.production-process__video-btn {
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top: -38px;
+  margin-left: -50.5px;
+  cursor: pointer;
+
+}
+.production-process__video-btn:hover {
+  margin-left: -60.4px;
+  margin-top: -46px;
+  img {
+    width: 120%;
+    height: auto;
+  }
+}
+.production-process__video-btn:active {
+  margin-left: -40.4px;
+  margin-top: -30.8px;
+  img {
+    width: 80%;
+    height: auto;
+    opacity: 0.3;
+  }
+}
+.production-process__wrapper:hover  {
+  box-shadow: 0px 6px 10px 0 rgba(0,0,0,0.1);
+
+}
+
+.production-process__wrapper:active {
+  box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.1);
+
+}
+
+/*.production-process__video::before {
   content: "";
   display: block;
   background: url(../img/icon-play.svg);
@@ -37,9 +84,11 @@
   margin-top: -38px;
   margin-left: -50.5px;
 
-}
+}*/
 .production-process__order {
-  width:100%;
+  width:190px;
+  margin: 0 auto;
+  margin-bottom:32px;
 }
 .production-process__icon-video {
   fill:#63d1bb;
@@ -47,18 +96,15 @@
 @media @mobile-widths-only {
   .production-process__wrapper {
     position: relative;
-    padding-top: 100px;
   }
   .production-process__title-wrapper {
-    position: absolute;
-    top:0;
-    left:30px;
-    right: 30px;
+
     display: flex;
     width:260px;
     padding-bottom: 25px;
     border:1px solid #ececec;
     box-sizing: border-box;
+    order:-2;
   }
   .production-process__icon-video {
     margin-right: 20px;
@@ -68,42 +114,88 @@
   }
 }
 @media @tablet-widths {
-  .production-process__decription {
+  .production-process__wrapper {
+    padding: 0;
 
   }
-  .production-process__video img{
-    width: 670px;
+  .production-process__decription,
+  .production-process__title-wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .production-process__video-img{
+    width: 668px;
     height: auto;
+  }
+  .production-process__video {
+    height: 385.38px;
+
   }
   .production-process__title-wrapper {
     display: flex;
+
+  }
+  .production-process__title {
+    margin-top: 37px;
+    font-size: 20px;
+    line-height: 24px;
+
   }
   .production-process__icon-video {
     margin-right: 20px;
-    margin-top: auto;
+    margin-top: 37px;
     margin-bottom: auto;
+  }
+  .production-process__order {
+    width:580px;
+    margin-bottom: 44px;
+
+  }
+  .production-process__decription {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 36px;
   }
 }
 @media @desktop-widths {
   .production-process__wrapper {
-  display: flex;
+    height:456px;
+    flex-wrap: wrap;
+    padding: 0;
+
   }
-  .production-process__video video{
+  .production-process__video-img{
     width: 680px;
     height: 456px;
   }
-  .production-process__order {
-    width:228px;
+  .production-process__video {
+    height: 456px;
   }
-  .production-process__decription {
-    padding-left: 79px;
-    padding-right: 57px;
+
+  .production-process__decription,
+  .production-process__title-wrapper,
+  .production-process__order  {
+    width:228px;
+    margin-right: 50px;
+    margin-left: 79px;
+
   }
   .production-process__title-wrapper {
     display: block;
   }
+  .production-process__title {
+    margin-top: 14px;
+  }
+
   .production-process__icon-video {
     margin-top: 40px;
 
+  }
+  .production-process__decription {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 47px;
   }
 }

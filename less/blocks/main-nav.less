@@ -5,9 +5,7 @@
   padding: 0;
   margin: 0;
 }
-.main-nav__item a,
-.main-nav-desktop__item a,
-.user-block__item a {
+.main-nav__item a {
   display: block;
   padding: 15px;
   font-family: "OpenSans Bold",sans-serif;
@@ -21,40 +19,49 @@
 .main-nav__icon-cart {
   margin-right: 24px;
 }
-.main-nav__toggle {
-  position: absolute;
-  right: 0;
-  top:0;
-  width: 20px;
-  height: 14px;
-  background: url("../img/icon-menu-open.svg");
-  border:none;
-  outline: none;
-  position: absolute;
-  right: 0;
-  top: 8px;
-  cursor: pointer;
-
+.main-nav__item a:hover {
+  color: rgba(0,0,0,0.6);
+}
+.main-nav__item a:active {
+  color: rgba(0,0,0,0.3);
 }
 @media @mobile-widths-only {
+  .main-nav {
+    width: 100%;
+  }
   .main-nav__item a {
     border: 1px solid #ececec;
     background: #fff;
+    padding-left: 75px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: left;
   }
   .main-nav {
-    position: absolute;
     width:100%;
-    left:0;
   }
+  .main-nav--closed {
+    display: none;
+  }
+  .main-nav--opened {
+    display: block;
+  }
+  .main-nav--nojs {
+    display: block;
+  }
+
 }
 @media @tablet-widths {
   .main-nav {
-    width:335px;
+    width:345px;
   }
   .main-nav__toggle {
     display: none;
   }
   .main-nav__item a {
+    padding-left: 0;
+    padding-right: 36px;
+    padding-top: 19px;
     font-size: 15px;
     line-height: 24px;
   }
@@ -77,8 +84,7 @@
     order: -1;
   }
   .main-nav__item a {
-    padding-left: 0;
-    padding-right: 33px;
+
 
   }
   .page-header__logo-wrapper {
@@ -100,13 +106,17 @@
     padding-bottom: 30px;
     padding-right: 0;
   }
+  .order__users-data input[type="text"] {
+    margin-left: 28px;
+  }
+
+
 
 }
 @media @desktop-widths {
   .main-nav {
     order:-3;
-    margin-top: auto;
-    margin-bottom: auto;
+
     width: 400px;
   }
   .main-nav__item a {
@@ -114,10 +124,17 @@
   }
   .main-nav__item:nth-child(1) a {
     padding-left: 0;
-    padding-right: 31px;
+    padding-right: 37px;
+    border-right: 1px solid #ececec;
+    padding-top: 27px;
+    padding-bottom: 33px;
   }
   .main-nav__item:nth-child(2) a {
     padding-left: 31px;
+    padding-right: 0;
+    padding-top: 27px;
+    padding-bottom: 33px;
+
   }
 
   .main-nav-desktop {

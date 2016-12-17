@@ -22,6 +22,78 @@
   color: rgba(255,255,255,0.3);
 
 }
+.btn-toggle {
+  display: block;
+  width: 21px;
+  height:16px;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  background:#fff;
+  top:30px;
+  right:30px;
+
+}
+.btn-toggle--closed::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 21px;
+  height: 2px;
+  background-color: #000;
+  box-shadow: 0 6px 0 0 #000,
+              0 12px 0 0 #000;
+}
+.btn-toggle--opened::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  top:9px;
+  left:0;
+  background-color: #000;
+  transform: rotate(45deg);
+
+}
+.btn-toggle--opened::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  top:9px;
+  left:0;
+  background-color: #000;
+  transform: rotate(-45deg);
+
+}
+.btn-toggle--nojs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  top:9px;
+  left:0;
+  background-color: #000;
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.btn-toggle--nojs::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  top:9px;
+  left:0;
+  background-color: #000;
+  transform: rotate(-45deg);
+}
 .order__send-order{
   background-color: #fff;
 }
@@ -32,7 +104,11 @@
 
 }
 @media @tablet-widths {
+  .btn-toggle {
+    display: none;
   }
+}
+
 
 @media @desktop-widths {
 

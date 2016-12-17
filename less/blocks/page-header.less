@@ -4,6 +4,7 @@
 .page-header__wrapper{
   .container();
 
+
   position: relative;
   text-align: center;
 
@@ -12,9 +13,33 @@
   margin: auto;
   margin-right: 0;
 }
+.page-header__logo:hover,
+.page-header__logo-tablet:hover,
+.page-header__logo-desktop:hover {
+  fill-opacity:0.6;
+}
+.page-header__logo:active,
+.page-header__logo-tablet:active,
+.page-header__logo-desktop:active {
+  fill-opacity:0.3;
+}
 @media @mobile-widths-only {
+  .page-header{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -160px;
+  }
+  .page-header--nojs {
+    position: static;
+    margin:0;
+  }
   .page-header__wrapper {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    padding: 0;
+    width: 320px;
   }
   .page-header__logo-tablet,
   .page-header__logo-desktop,
@@ -23,6 +48,10 @@
   }
   .main-nav-desktop {
     display: none;
+  }
+  .page-header__logo-wrapper {
+    margin-top: 20px;
+    margin-bottom: 14px;
   }
 }
 @media @tablet-widths {

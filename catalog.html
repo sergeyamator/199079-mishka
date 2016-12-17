@@ -46,15 +46,15 @@
         <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
       </symbol>
     </svg>
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
-          <svg class="page-header__logo" width="85.589px" height="35.034px"><use xlink:href="#mishka"/></svg>
-          <img class="page-header__logo-tablet" src="img/mishka-logo-tablet.png" width="113" height="46" alt="mishka">
-          <img class="page-header__logo-desktop" src="img/mishka-logo-desktop.png" width="149" height="72" alt="mishka">
+          <a href="index.html"><svg class="page-header__logo" width="85.589px" height="35.034px"><use xlink:href="#mishka"/></svg></a>
+          <a href="index.html"><img class="page-header__logo-tablet" src="img/mishka-logo-tablet.png" width="113" height="46" alt="mishka"></a>
+          <a href="index.html"><img class="page-header__logo-desktop" src="img/mishka-logo-desktop.png" width="149" height="72" alt="mishka"></a>
         </div>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="main-nav">
+        <button class="btn-toggle btn-toggle--closed btn-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
@@ -66,7 +66,7 @@
             <li class="main-nav-desktop__item"><a href="#">Распродажа</a></li>
           </ul>
         </nav>
-        <div class="user-block">
+        <div class="user-block user-block--closed user-block--nojs">
           <ul class="user-block__list">
             <li class="user-block__item user-block__item-search"><a href="#"><svg class="user-block__icon-search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"/></svg><span class="user-block__search">Поиск по сайту</span></a></li>
             <li class="user-block__item"><a href="#"><svg class="user-block__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg>Корзина:пока пуста</a></li>
@@ -85,8 +85,11 @@
             <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
           </div>
           <div class="catalog-item__description">
-            <a class="catalog-item__title" href="#">Зайчик-попрыгайчик</a>
-            <p>Рост 30 см, вес 200 г</p>
+            <div class="catalog-item__title-wrapper">
+              <a class="catalog-item__title" href="#">Зайчик-попрыгайчик</a>
+              <p>Рост 30 см, вес 200 г</p>
+            </div>
+
             <div class="catalog-item__price-block">
               <span>1200 руб.</span>
               <a class="catalog-item__order-btn" href="#"><svg class="catalog-item__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg></a>
@@ -98,10 +101,13 @@
             <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья"></a>
           </div>
           <div class="catalog-item__description">
-            <a class="catalog-item__title" href="#">Корзинка для белья</a>
-            <p> Диаметр 15 см, высота 10 см</p>
+            <div class="catalog-item__title-wrapper">
+              <a class="catalog-item__title" href="#">Корзинка для белья</a>
+              <p> Диаметр 15 см, высота 10 см</p>
+            </div>
+
             <div class="catalog-item__price-block">
-              690 руб.
+              <span>690 руб.</span>
               <a class="catalog-item__order-btn" href="#"><svg class="catalog-item__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg></a>
             </div>
           </div>
@@ -111,10 +117,12 @@
             <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
           </div>
           <div class="catalog-item__description">
-            <a class="catalog-item__title" href="#">Большая корзинка для игрушек</a>
-            <p>Диаметр 30 см, высота 30 см</p>
+            <div class="catalog-item__title-wrapper">
+              <a class="catalog-item__title" href="#">Большая корзинка для игрушек</a>
+              <p>Диаметр 30 см, высота 30 см</p>
+            </div>
             <div class="catalog-item__price-block">
-                1500 руб.
+                <span>1500 руб.</span>
               <a class="catalog-item__order-btn" href="#"><svg class="catalog-item__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg></a>
             </div>
           </div>
@@ -124,16 +132,15 @@
     <section class="production-process">
       <div class="production-process__wrapper">
         <div class="production-process__video">
-          <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
+          <img class="production-process__video-img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
+          <btn class="production-process__video-btn"><img src="img/icon-play.svg" width="101px" height="77px"></btn>
         </div>
-        <div class="production-process__decription">
           <div class="production-process__title-wrapper">
             <svg class="production-process__icon-video" width="32px" height="32px"><use xlink:href="#video"/></svg>
             <h2 class="production-process__title">Процесс производства</h2>
           </div>
-          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <p class="production-process__decription">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="production-process__order btn" href="#">Сделать заказ</a>
-        </div>
       </div>
     </section>
     <footer class="page-footer">
@@ -167,5 +174,34 @@
     </form>
     <div class="modal-overlay">
     </div>
+    <script>
+      var mainNav=document.querySelector('.main-nav');
+      var btnToggle=document.querySelector('.btn-toggle');
+      var userBlock=document.querySelector('.user-block');
+      var pageHeader=document.querySelector('.page-header');
+      mainNav.classList.remove('main-nav--nojs');
+      userBlock.classList.remove('user-block--nojs');
+      pageHeader.classList.remove('page-header--nojs');
+      btnToggle.classList.remove('btn-toggle--nojs');
+
+      btnToggle.addEventListener('click', function () {
+        if (mainNav.classList.contains('main-nav--closed')) {
+          mainNav.classList.add('main-nav--opened');
+          mainNav.classList.remove('main-nav--closed');
+          btnToggle.classList.add('btn-toggle--opened');
+          btnToggle.classList.remove('btn-toggle--closed');
+          userBlock.classList.add('user-block--opened');
+          userBlock.classList.remove('user-block--closed');
+        }
+        else {
+          mainNav.classList.add('main-nav--closed');
+          mainNav.classList.remove('main-nav--opened');
+          btnToggle.classList.add('btn-toggle--closed');
+          btnToggle.classList.remove('btn-toggle--opened');
+          userBlock.classList.add('user-block--closed');
+          userBlock.classList.remove('user-block--opened');
+        }
+      });
+  </script>
   </body>
 </html>

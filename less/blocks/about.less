@@ -9,9 +9,19 @@
   padding: 0;
   margin: 0;
 }
+.about__title {
+  margin-bottom: 33px;
+
+}
+.about__icon {
+  margin-left: 5px;
+  margin-bottom: 23px;
+  margin-top: 25px;
+}
 .about__feature{
   font-family: "OpenSans Bold",sans-serif;
   font-size: 17px;
+  line-height: 22px;
   list-style: none;
 }
 .about__icon{
@@ -21,11 +31,40 @@
 
 }
 @media @tablet-widths {
-  .about__features{
+  .about__features  {
     display: flex;
     flex-wrap: wrap;
   }
   .about__feature {
     flex-basis:334px;
+    font-size: 20px;
+    margin-bottom: 25px;
   }
+  .about__feature:nth-child(1) {
+    order:-2;
+  }
+  .about__feature:nth-child(4) {
+    order:-1;
+  }
+  .about__feature:nth-child(2) {
+    order:0;
+  }
+  .about__feature:nth-child(5) {
+    order:1;
+  }
+  .about__feature:nth-child(3) {
+    order:2;
+  }
+  .about__feature:nth-child(6) {
+    order:3;
+  }
+
+}
+@media @desktop-widths {
+  .about__wrapper {
+    width: 700px;
+  }
+
+
+
 }
