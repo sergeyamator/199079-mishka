@@ -3,6 +3,7 @@ body{
   font-size: 15px;
   line-height: 30px;
   color:#444444;
+  overflow-x: hidden;
 
 }
 h1{
@@ -16,7 +17,9 @@ h2{
   line-height: 30px;
   color:#000;
 }
-
+.visually-hidden {
+  .hidden();
+}
 @font-face {
   font-family:"OpenSans";
   src:url("../fonts/opensans.woff"),
@@ -28,4 +31,28 @@ h2{
   src:url("../fonts/opensansbold.woff"),
       url("../fonts/opensansbold.woff2");
 
+}
+@media @tablet-widths {
+  h1{
+    font-size: 43px;
+    line-height: 50px;
+
+  }
+  h2 {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+}
+@media @desktop-widths {
+  h1 {
+    font-size: 53px;
+    line-height: 57px;
+
+  }
+  h2 {
+    font-size: 53px;
+    line-height: 57px;
+
+  }
 }

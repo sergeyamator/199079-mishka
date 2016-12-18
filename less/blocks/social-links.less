@@ -1,3 +1,7 @@
+.social-links {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
 .social-links__list {
   padding: 0;
   margin: 0;
@@ -10,4 +14,23 @@
 .social-links__item a {
   display: block;
   font-size: 19px;
+  margin-right: 35px;
+}
+.social-links__item a:hover svg {
+  fill:#46c1ae;
+}
+.social-links__item a:active svg {
+  fill:#46c1ae;
+  fill-opacity:0.3;
+}
+.social-links__item:last-child a {
+  margin-right: 0;
+}
+.visually-hidden {
+  visibility: hidden;
+}
+@media @mobile-widths-only {
+  .social-links__list {
+      margin: 0 56px;
+  }
 }
