@@ -2,7 +2,13 @@
   position: absolute;
   top: -9999px;
 }
-
+.clearfix() {
+ &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 .container() {
   width: 260px;
   margin-left: auto;
