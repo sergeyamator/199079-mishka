@@ -1,6 +1,7 @@
 .main-content{
   background: url("../img/hero-mobile@1x.jpg") center -17px no-repeat;
   border-top: 1px solid #ececec;
+  position: relative;
 
 }
 .main-content__wrapper{
@@ -29,6 +30,16 @@
   .main-content {
     background:url("../img/hero-desktop.jpg") center top no-repeat;
   }
+  .main-content::after {
+    content:"";
+    height: 34px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    z-index: 100;
+    background: url(../img/bg-zigzag-fill.svg) 50% 13px repeat-x;
+  }
   .main-content__wrapper {
   }
 
@@ -38,5 +49,6 @@
     font-size: 43px;
     line-height: 50px;
   }
+
 
 }

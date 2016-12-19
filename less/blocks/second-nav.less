@@ -31,7 +31,8 @@
   fill:#44c0aa;
 }
 .second-nav__item:hover {
-  transform: scaleY(1.1) translateY(-5px);
+  transform: /*scaleY(1.05)*/ translateY(-5px);
+
 }
 .second-nav__item {
   transition: 0.3s;
@@ -49,11 +50,13 @@
 .second-nav__item:nth-child(1) {
   background-color: #63d1bb;
 
+
 }
 .second-nav__item:nth-child(2) {
   background-color: #56c3b2;
 
 }
+
 
 .second-nav__item-title {
   display: inline-block;
@@ -85,5 +88,13 @@
   .second-nav__item {
     flex-grow: 1;
   }
+  /*.second-nav__item:nth-child(1) {
+    background:#63d1bb url("../../img/bg-zigzag-fill.svg") center 90px repeat-x;
+
+  }
+  .second-nav__item:nth-child(2) {
+    background:#56c3b2 url("../../img/bg-zigzag-fill.svg") center 90px repeat-x;
+
+  }*/
 
 }

@@ -15,6 +15,15 @@
 .main-nav-desktop__item a:active {
   color: rgba(0,0,0,0.3);
 }
+@media @tablet-widths {
+  .main-nav-desktop {
+    display: none;
+  }
+ .main-nav-desktop__list {
+    display: flex;
+  }
+}
+
 @media @desktop-widths {
   .main-nav-desktop {
     display: block;
@@ -31,4 +40,5 @@
   .main-nav-desktop__item:nth-child(2) a {
     padding-left: 30px;
   }
+
 }
