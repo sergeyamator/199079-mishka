@@ -25,7 +25,6 @@
 .reviews__next{
   display: block;
   padding: 15px 35px 10px 35px;
-
   flex-grow: 1;
 
 }
@@ -59,10 +58,18 @@
   }
 }
 @media @tablet-widths {
-  .reviews__wrapper{
+  .reviews {
+    background: url("../img/bg-zigzag-line.svg") center bottom repeat-x;
+  }
+  .reviews__wrapper {
     background: url("../img/review@1x.jpg") left top no-repeat;
     display: flex;
     flex-wrap: wrap;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
   .reviews__title {
     order: -2;

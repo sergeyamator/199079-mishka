@@ -1,8 +1,9 @@
 
 .catalog__title{
-  background-color:#f1f1f1;
   padding:5px 0px;
   margin-bottom:28px;
+  background-color: #f1f1f1;
+
 
 }
 .catalog__title-container{
@@ -24,7 +25,10 @@
 
 .catalog__wrapper {
   .container();
+  display: flex;
+  flex-direction: column;
 }
+
 @media @mobile-widths-only {
   .catalog {
     margin-top: 78px;
@@ -32,6 +36,7 @@
   .page-header--nojs + .catalog {
     margin-top: 0;
   }
+
 }
 @media @tablet-widths {
   .catalog-item {
@@ -40,10 +45,14 @@
   .catalog {
 
   }
+  .catalog__title {
+    background: #f1f1f1 url("../../img/bg-zigzag-fill.svg") center bottom repeat-x;
+  }
 }
 @media @desktop-widths {
   .catalog__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .catalog-item {
