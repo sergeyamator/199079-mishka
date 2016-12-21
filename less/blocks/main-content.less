@@ -14,11 +14,9 @@
   padding-top: 1px;
   padding-bottom: 1px;
 }
-.main-content__title{
-  margin-top: 66px;
-  margin-bottom: 126px;
-  font-size: 27px;
-  line-height: 30px;
+.main-content__title {
+  margin-top: 70px;
+  margin-bottom: 121px;
   text-align: center;
 }
 @media @mobile-widths-only {
@@ -28,7 +26,10 @@
   .page-header--nojs + .main-content {
     margin-top: 0;
   }
-
+  .main-content__title {
+    font-size: 27px;
+    line-height: 30px;
+  }
 }
 @media @tablet-widths {
   .main-content {
@@ -52,11 +53,12 @@
   }
 
   .main-content__title {
-    margin-top: 150px;
-    margin-bottom: 357px;
-    font-size: 43px;
-    line-height: 50px;
+    margin-top: 154px;
+    margin-bottom: 371px;
   }
-
-
+}
+@media @desktop-widths {
+  .main-content__title {
+    margin-bottom: 356px;
+  }
 }

@@ -104,7 +104,7 @@
         </g>
       </symbol>
     </svg>
-    <header class="page-header page-header--nojs">
+    <header class="page-header page-header--menu-closed page-header--nojs">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
           <a href="index.html"><svg class="page-header__logo" width="85.589px" height="35.034px"><use xlink:href="#mishka"/></svg></a>
@@ -112,7 +112,7 @@
           <a href="index.html"><svg class="page-header__logo-desktop" width="148.051px" height="72.707px"><use xlink:href="#logo-desktop"/></svg></a>
         </div>
         <button class="btn-toggle btn-toggle--closed btn-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
@@ -124,7 +124,7 @@
             <li class="main-nav-desktop__item"><a href="#">Распродажа</a></li>
           </ul>
         </nav>
-        <div class="user-block user-block--closed user-block--nojs">
+        <div class="user-block">
           <ul class="user-block__list">
             <li class="user-block__item user-block__item-search"><a href="#"><svg class="user-block__icon-search" width="17.6px" height="17.6px"><use xlink:href="#icon-search"/></svg><span class="user-block__search">Поиск по сайту</span></a></li>
             <li class="user-block__item"><a href="#"><svg class="user-block__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg>Корзина:пока пуста</a></li>
@@ -154,7 +154,7 @@
             </div>
             <p>Рост 30 см, вес 200 г</p>
             <div class="catalog-item__price-block">
-              <span>1200 руб.</span>
+              <span>1 200 руб.</span>
               <a class="catalog-item__order-btn" href="#"><svg class="catalog-item__icon-cart" width="20.294px" height="18.849px"><use xlink:href="#icon-cart"/></svg></a>
             </div>
           </div>
@@ -237,7 +237,7 @@
         </div>
         <div class="page-footer__copyright">
           <span>Разработано:</span>
-          <a href="#"><svg class="page-footer__logo-copyright" width="40" height="47"><use xlink:href="#htmlacademy"/></svg></a>
+          <a href="#"><svg class="page-footer__logo-copyright" width="26.943px" height="34.09px"><use xlink:href="#htmlacademy"/></svg></a>
         </div>
       </div>
     </footer>
@@ -254,34 +254,6 @@
     </form>
     <div class="modal-overlay">
     </div>
-    <script>
-      var mainNav=document.querySelector('.main-nav');
-      var btnToggle=document.querySelector('.btn-toggle');
-      var userBlock=document.querySelector('.user-block');
-      var pageHeader=document.querySelector('.page-header');
-      mainNav.classList.remove('main-nav--nojs');
-      userBlock.classList.remove('user-block--nojs');
-      pageHeader.classList.remove('page-header--nojs');
-      btnToggle.classList.remove('btn-toggle--nojs');
-
-      btnToggle.addEventListener('click', function () {
-        if (mainNav.classList.contains('main-nav--closed')) {
-          mainNav.classList.add('main-nav--opened');
-          mainNav.classList.remove('main-nav--closed');
-          btnToggle.classList.add('btn-toggle--opened');
-          btnToggle.classList.remove('btn-toggle--closed');
-          userBlock.classList.add('user-block--opened');
-          userBlock.classList.remove('user-block--closed');
-        }
-        else {
-          mainNav.classList.add('main-nav--closed');
-          mainNav.classList.remove('main-nav--opened');
-          btnToggle.classList.add('btn-toggle--closed');
-          btnToggle.classList.remove('btn-toggle--opened');
-          userBlock.classList.add('user-block--closed');
-          userBlock.classList.remove('user-block--opened');
-        }
-      });
-  </script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

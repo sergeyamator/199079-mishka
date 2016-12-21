@@ -11,7 +11,7 @@
 .main-nav__item a {
   display: block;
   padding: 15px;
-  font-family: "OpenSans Bold",sans-serif;
+  font-family: "OpenSans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
@@ -41,13 +41,13 @@
     text-align: left;
   }
 
-  .main-nav--closed {
+  .page-header--menu-closed .main-nav {
     display: none;
   }
-  .main-nav--opened {
+  .page-header--menu-opened .main-nav {
     display: block;
   }
-  .main-nav--nojs {
+  .page-header--nojs .main-nav {
     display: block;
   }
 
@@ -68,54 +68,15 @@
     line-height: 24px;
   }
 
-  .user-block__search {
-    display: none;
-  }
   .main-nav__list {
     display: flex;
   }
-
-  .user-block__list {
-    display: flex;
-  }
-  .user-block {
-    order: -1;
-  }
-  .main-nav__item a {
-
-
-  }
-  .page-header__logo-wrapper {
-    order: -2;
-  }
-
-  .user-block__item {
-    border-left: 1px solid #ececec;
-  }
-  .user-block__item-search a {
-    padding-top: 33px;
-    padding-bottom: 30px;
-    padding-left: 33px;
-    padding-right: 34px;
-  }
-  .user-block__item:last-child a {
-    padding-left: 34px;
-    padding-top: 33px;
-    padding-bottom: 30px;
-    padding-right: 0;
-  }
-  .order__users-data input[type="text"] {
-    margin-left: 28px;
-  }
-
-
-
 }
 @media @desktop-widths {
   .main-nav {
     order:-3;
-
     width: 400px;
+    margin-right: 51px;
   }
   .main-nav__item a {
     font-size: 17px;
@@ -124,13 +85,13 @@
     padding-left: 0;
     padding-right: 37px;
     border-right: 1px solid #ececec;
-    padding-top: 27px;
+    padding-top: 30px;
     padding-bottom: 33px;
   }
   .main-nav__item:nth-child(2) a {
-    padding-left: 31px;
+    padding-left: 33px;
     padding-right: 0;
-    padding-top: 27px;
+    padding-top: 31px;
     padding-bottom: 33px;
 
   }

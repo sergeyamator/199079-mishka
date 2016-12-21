@@ -13,7 +13,7 @@
 .user-block__item a {
   display: block;
   padding: 15px;
-  font-family: "OpenSans Bold",sans-serif;
+  font-family: "OpenSans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
@@ -46,13 +46,13 @@
     padding-left:75px;
     position: relative;
   }
-  .user-block--closed {
+  .page-header--menu-closed .user-block {
     display: none;
   }
-  .user-block--opened {
+  .page-header--menu-opened .user-block {
     display: block;
   }
-  .user-block--nojs {
+  .page-header--nojs .user-block {
     display: block;
   }
   .user-block__icon-search,
@@ -70,12 +70,14 @@
   .user-block {
     width: 350px;
   }
+
   .user-block__search {
     display: none;
   }
   .user-block__list {
     display: flex;
   }
+
   .user-block {
     order: -1;
   }
@@ -95,5 +97,4 @@
     padding-bottom: 30px;
     padding-right: 0;
   }
-
 }

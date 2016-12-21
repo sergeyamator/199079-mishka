@@ -12,8 +12,10 @@
 
 }
 .page-header__delivery {
+  z-index: 100;
   margin: auto;
   margin-right: 0;
+  align-self: flex-end;
 }
 .page-header__logo:hover,
 .page-header__logo-tablet:hover,
@@ -25,6 +27,10 @@
 .page-header__logo-desktop:active {
   fill:#b2b2b2;
 }
+.page-header__logo-wrapper {
+  align-self: center;
+}
+
 @media @mobile-widths-only {
   .page-header{
     position: absolute;
@@ -52,8 +58,10 @@
     display: none;
   }
   .page-header__logo-wrapper {
-    margin-top: 20px;
+    margin-top: 21px;
     margin-bottom: 14px;
+
+
   }
 }
 @media @tablet-widths {
@@ -78,7 +86,9 @@
   .page-header__logo-wrapper {
     margin: auto;
     margin-left: 0;
+    order: -2;
   }
+
   .page-header__delivery {
     font-size: 15px;
     line-height: 24px;
