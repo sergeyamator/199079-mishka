@@ -1,7 +1,6 @@
 .labels-wrapper() {
     @media @tablet-widths {
     width: 500px;
-
   }
 
   @media @desktop-widths {
@@ -9,16 +8,15 @@
     margin-right: 175px;
   }
 }
-
-.order{
+.order {
   margin-bottom: 55px;
 }
-.order__title{
-  background-color:#f1f1f1;
-  padding:5px 0px;
+.order__title {
+  background-color: #f1f1f1;
+  padding: 5px 0px;
   margin-bottom: 25px;
 }
-.order__title-container{
+.order__title-container {
   .container();
   margin-top: 65px;
   margin-bottom: 72px;
@@ -28,10 +26,10 @@
   margin-bottom: 36px;
 }
 
-.order__wrapper{
+.order__wrapper {
   .container();
 }
-.order p{
+.order p {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 22px;
@@ -39,13 +37,12 @@
 .order__input-legend,
 .order__label-tel,
 .order__label-email,
-.order__label-textarea{
+.order__label-textarea {
   font-family: "OpenSans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
-
 }
 .order__label-tel,
 .order__label-email,
@@ -56,11 +53,10 @@
 .order__label-checkbox,
 .order__label-name,
 .order__label-surname,
-.order__label-patronymic{
+.order__label-patronymic {
   font-family: "OpenSans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-
 }
 .order__input-legend {
   display: block;
@@ -73,17 +69,14 @@
 .order__users-data {
   margin-bottom: 32px;
 }
-
-
-.order__legend{
+.order__legend {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 32px;
   display: block;
 }
-
 .order__label-radio {
-  padding-left:60px;
+  padding-left: 60px;
   position: relative;
   display: block;
   margin-bottom: 30px;
@@ -96,67 +89,66 @@
     box-sizing: border-box;
 }
 .order__label-radio input,
-.order__label-checkbox input
-{
+.order__label-checkbox input {
   display: none;
 }
-.order__radio-indicator{
+.order__radio-indicator {
   display: block;
   border-radius: 50%;
-  border:2px solid #444;
+  border: 2px solid #444;
   width: 38px;
   height: 38px;
   position: absolute;
-  left:0;
+  left: 0;
   top: -12px;
 }
 .order__checkbox-indicator {
   display: block;
-  border:2px solid #444;
+  border: 2px solid #444;
   width: 38px;
   height: 38px;
   position: absolute;
-  left:0;
+  left: 0;
   top: -12px;
 }
-.order__label-radio input[type="radio"]:checked + .order__radio-indicator:before{
-  content:"";
+.order__label-radio input[type="radio"]:checked + .order__radio-indicator:before {
+  content: "";
   display: block;
-  width:14px;
+  width: 14px;
   height: 14px;
   border-radius: 50%;
   background: #62d1ba;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
-  margin-top:-7px;
+  margin-top: -7px;
   margin-left: -7px;
 }
-.order__label-checkbox input[type="checkbox"]:checked + .order__checkbox-indicator:before{
-  content:"";
+.order__label-checkbox input[type="checkbox"]:checked + .order__checkbox-indicator:before {
+  content: "";
   display: block;
-  width:11px;
+  width: 11px;
   height: 2px;
   background: black;
   position: absolute;
-  top:27px;
+  top: 27px;
   left: 16px;
-  margin-top:-7px;
+  margin-top: -7px;
   margin-left: -7px;
-  transform:rotate(45deg);
+  transform: rotate(45deg);
 }
-.order__label-checkbox input[type="checkbox"]:checked + .order__checkbox-indicator:after{
-  content:"";
+.order__label-checkbox input[type="checkbox"]:checked + .order__checkbox-indicator:after {
+  content: "";
   display: block;
-  width:15px;
+  width: 15px;
   height: 2px;
   background: black;
   position: absolute;
-  top:25px;
+  top: 25px;
   left: 23px;
-  margin-top:-7px;
+  margin-top: -7px;
   margin-left: -7px;
-  transform:rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .order__label-name,
 .order__label-surname,
@@ -174,7 +166,7 @@
   margin-bottom: 26px;
   display: block;
 }
-.order__label-textarea +textarea {
+.order__label-textarea + textarea {
   height: 141px;
   box-sizing: border-box;
 }
@@ -191,7 +183,7 @@
 .order__label-tel + input[type="tel"],
 .order__label-email + input[type="email"],
 .order__label-textarea + textarea {
-  border:none;
+  border: none;
   border-bottom: 2px solid #000;
   padding-bottom: 15px;
   outline: none;
@@ -204,18 +196,17 @@
   border: 2px solid #000;
   padding: 15px;
 }
-
 .order__label-radio:hover .order__radio-indicator {
-  border:2px solid #62d1ba;
+  border: 2px solid #62d1ba;
 }
 .order__label-radio:active .order__radio-indicator {
-  border:2px solid rgba(68,68,68,0.3);
+  border: 2px solid rgba(68,68,68,0.3);
 }
 .order__label-checkbox:hover .order__checkbox-indicator {
   border:2px solid #62d1ba;
 }
 .order__label-checkbox:active .order__checkbox-indicator {
-  border:2px solid rgba(68,68,68,0.3);
+  border: 2px solid rgba(68,68,68,0.3);
 }
 .order__label-name:hover input,
 .order__label-surname:hover input,
@@ -235,7 +226,7 @@
   font-size: 17px;
   line-height: 18px;
 }
-::-moz-placeholder  {
+::-moz-placeholder {
   font-family: "OpenSans", "Arial", sans-serif;
   color: rgba(68,68,68,0.3);
   font-size: 17px;
@@ -247,7 +238,7 @@
   font-size: 17px;
   line-height: 18px;
 }/* Firefox 18- */
-:-ms-input-placeholder  {
+:-ms-input-placeholder {
   font-family: "OpenSans", "Arial", sans-serif;
   color: rgba(68,68,68,0.3);
   font-size: 17px;
@@ -281,7 +272,7 @@ input[type="email"]:hover {
   .order__input-legend::after {
     content: "";
     display: block;
-    width:198px;
+    width: 198px;
     height: 1px;
     position: absolute;
     top: 9px;
@@ -293,48 +284,43 @@ input[type="email"]:hover {
   .order__label-textarea::after {
     content: "";
     display: block;
-    width:198px;
+    width: 198px;
     height: 1px;
     position: absolute;
     top: 9px;
     left: 61px;
     background-color: #62d1ba;
-
   }
   .order__label-name input[type="text"],
   .order__label-surname input[type="text"],
   .order__label-patronymic input[type="text"],
   .order__label-tel + input[type="tel"],
   .order__label-email + input[type="email"],
-  .order__label-textarea + textarea{
+  .order__label-textarea + textarea {
     display: block;
-    width:100%;
+    width: 100%;
   }
   .order__label-name input[type="text"],
   .order__label-surname input[type="text"],
   .order__label-patronymic input[type="text"] {
     padding-top: 15px;
   }
-
   .order {
     margin-top: 78px;
   }
   .page-header--nojs + .order {
     margin-top: 0;
   }
-
-  .order__title-container{
+  .order__title-container {
     font-size: 27px;
   }
-
-
 }
 
 @media @tablet-widths {
   .order {
     margin-bottom: 52px;
   }
-  .order p{
+  .order p {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 74px;
@@ -343,7 +329,7 @@ input[type="email"]:hover {
   .order__color-filter,
   .order__users-data,
   .order__contacts-wrapper,
-  .order__textarea-wrapper  {
+  .order__textarea-wrapper {
     display: flex;
   }
   .order__input-legend,
@@ -352,12 +338,11 @@ input[type="email"]:hover {
   .order__label-textarea {
     margin-right: auto;
   }
-
   .order__label-name,
   .order__label-surname,
   .order__label-patronymic {
     box-sizing: border-box;
-    display:flex;
+    display: flex;
   }
   .order__label-tel input[type="tel"],
   .order__label-email input[type="email"],
@@ -381,18 +366,18 @@ input[type="email"]:hover {
     flex-wrap: wrap;
   }
   .order__contacts-wrapper,
-  .order__textarea-wrapper  {
+  .order__textarea-wrapper {
     display: flex;
     flex-wrap: wrap;
   }
   .order__btn-wrapper {
     display: flex;
   }
-  .order__legend  {
+  .order__legend {
     order: 2;
     margin: auto;
     margin-right: 0;
-    font-size:17px;
+    font-size: 17px;
     line-height: 30px;
   }
   .order__title-container {
@@ -404,50 +389,47 @@ input[type="email"]:hover {
     background: #f1f1f1 url("../img/bg-zigzag-fill.svg") center bottom repeat-x;
     background-size: auto 21px;
   }
-
-  .order__radio-indicator{
+  .order__radio-indicator {
     width: 49px;
     height: 49px;
     position: absolute;
-    left:0;
+    left: 0;
     top: -17px;
   }
   .order__checkbox-indicator {
     width: 49px;
     height: 49px;
     position: absolute;
-    left:0;
+    left: 0;
     top: -17px;
   }
-  .order__label-radio input[type="radio"]:checked + .order__radio-indicator:before{
-    width:18px;
+  .order__label-radio input[type="radio"]:checked + .order__radio-indicator:before {
+    width: 18px;
     height: 18px;
-    margin-top:-9px;
+    margin-top: -9px;
     margin-left: -9px;
   }
-.order__label-checkbox input[type="checkbox"]:checked + .order__checkbox-indicator:before{
-
-    width:17px;
+.order__label-checkbox input[type="checkbox"]:checked + .order__checkbox-indicator:before {
+    width: 17px;
     height: 2px;
-    top:36px;
+    top: 36px;
     left: 11px;
   }
-  .order__label-checkbox input[type="checkbox"]:checked + .order__checkbox-indicator:after{
-    width:30px;
+  .order__label-checkbox input[type="checkbox"]:checked + .order__checkbox-indicator:after {
+    width: 30px;
     height: 2px;
-    top:31px;
+    top: 31px;
     left: 20px;
   }
   .order__label-radio {
     margin-bottom: 56px;
     padding-left: 82px;
   }
-  .order__label-checkbox  {
+  .order__label-checkbox {
     margin-bottom: 58px;
     padding-left: 82px;
   }
   .order__type-filter {
-
     margin-bottom: 14px;
   }
 
@@ -466,12 +448,11 @@ input[type="email"]:hover {
 
   .order__label-radio,
   .order__label-checkbox {
-    font-size:19px;
+    font-size: 19px;
     line-height: 18px;
   }
   .order__users-data {
     margin-bottom: 13px;
-
   }
   .order__contacts-wrapper {
     background: #f1f1f1;
@@ -508,9 +489,8 @@ input[type="email"]:hover {
   }
 }
 @media @desktop-widths {
-
   .order__color-filter .order__labels-wrapper {
-    width:875px;
+    width: 875px;
     margin-right: 0px;
   }
   .order__input-legend {
@@ -523,10 +503,10 @@ input[type="email"]:hover {
     text-align: center;
   }
   .order__btn-wrapper {
-    width:700px;
+    width: 700px;
     margin: 0 auto;
   }
-  .order p  {
+  .order p {
     padding-left: 175px;
     padding-right: 175px;
   }

@@ -1,15 +1,7 @@
-.page-header{
-
-
-
-}
-.page-header__wrapper{
+.page-header__wrapper {
   .container();
-
-
   position: relative;
   text-align: center;
-
 }
 .page-header__delivery {
   z-index: 100;
@@ -20,27 +12,27 @@
 .page-header__logo:hover,
 .page-header__logo-tablet:hover,
 .page-header__logo-desktop:hover {
-  fill:#666;
+  fill: #666;
 }
 .page-header__logo:active,
 .page-header__logo-tablet:active,
 .page-header__logo-desktop:active {
-  fill:#b2b2b2;
+  fill: #b2b2b2;
 }
 .page-header__logo-wrapper {
   align-self: center;
 }
 
 @media @mobile-widths-only {
-  .page-header{
+  .page-header {
     position: absolute;
-    top:0;
-    left:50%;
+    top: 0;
+    left: 50%;
     margin-left: -160px;
   }
   .page-header--nojs {
     position: static;
-    margin:0;
+    margin: 0;
   }
   .page-header__wrapper {
     display: flex;
@@ -60,8 +52,6 @@
   .page-header__logo-wrapper {
     margin-top: 21px;
     margin-bottom: 14px;
-
-
   }
 }
 @media @tablet-widths {
@@ -73,22 +63,20 @@
     flex-wrap: wrap;
   }
   .page-header__logo,
-  .page-header__logo-desktop
-  {
+  .page-header__logo-desktop {
     display: none;
   }
   .page-header__logo-tablet {
     display: block;
   }
   .main-nav {
-    width:400px;
+    width: 400px;
   }
   .page-header__logo-wrapper {
     margin: auto;
     margin-left: 0;
     order: -2;
   }
-
   .page-header__delivery {
     font-size: 15px;
     line-height: 24px;
@@ -96,8 +84,6 @@
   }
 }
 @media @desktop-widths {
-  .page-header__wrapper {
-  }
   .page-header__logo-tablet {
     display: none;
   }

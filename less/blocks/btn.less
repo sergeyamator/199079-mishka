@@ -3,14 +3,14 @@
   font-family: "OpenSans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 16px;
-  border:2px solid #444444;
+  border: 2px solid #444444;
   text-transform: uppercase;
-  width:260px;
+  width: 260px;
   box-sizing: border-box;
   padding: 15px;
   text-align: center;
   text-decoration: none;
-  color:#444444;
+  color: #444444;
 }
 .btn:hover {
   background-color: #444;
@@ -20,27 +20,25 @@
 .btn:active {
   background-color: #444;
   color: rgba(255,255,255,0.3);
-
 }
 .btn-toggle {
   display: block;
   width: 21px;
-  height:16px;
-  border:none;
+  height: 16px;
+  border: none;
   outline: none;
   cursor: pointer;
   position: absolute;
-  background:#fff;
-  top:31px;
-  right:30px;
-
+  background: #fff;
+  top: 31px;
+  right: 30px;
 }
 .btn-toggle--closed::before {
   content: "";
   display: block;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 21px;
   height: 2px;
   background-color: #000;
@@ -53,11 +51,10 @@
   position: absolute;
   width: 27px;
   height: 2px;
-  top:9px;
-  left:0;
+  top: 9px;
+  left: 0;
   background-color: #000;
   transform: rotate(45deg);
-
 }
 .btn-toggle--opened::after {
   content: "";
@@ -65,11 +62,10 @@
   position: absolute;
   width: 27px;
   height: 2px;
-  top:9px;
-  left:0;
+  top: 9px;
+  left: 0;
   background-color: #000;
   transform: rotate(-45deg);
-
 }
 .btn-toggle--nojs::before {
   content: "";
@@ -77,8 +73,8 @@
   position: absolute;
   width: 27px;
   height: 2px;
-  top:9px;
-  left:0;
+  top: 9px;
+  left: 0;
   background-color: #000;
   transform: rotate(45deg);
   box-shadow: none;
@@ -89,27 +85,21 @@
   position: absolute;
   width: 27px;
   height: 2px;
-  top:9px;
-  left:0;
+  top: 9px;
+  left: 0;
   background-color: #000;
   transform: rotate(-45deg);
 }
-.order__send-order{
+.order__send-order {
   background-color: #fff;
 }
-.modal-form__add{
+.modal-form__add {
   background-color: #63d1bb;
-  color:#fff;
-  border:none;
-
+  color: #fff;
+  border: none;
 }
 @media @tablet-widths {
   .btn-toggle {
     display: none;
   }
-}
-
-
-@media @desktop-widths {
-
 }
