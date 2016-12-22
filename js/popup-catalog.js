@@ -4,12 +4,11 @@ var overlay = document.querySelector(".modal-overlay");
 
 catalog.onclick = function(event) {
   var target = event.target;
+   if (target.tagName === 'svg') {
+    target = target.parentNode;
+  }
   while (target != catalog) {
-     if (!target.classList) {
-      continue;
-    }
     if (target.classList.contains("catalog-item__order-btn")) {
-      console.log(target);
       modal_form_show(event)
       return;
     }
