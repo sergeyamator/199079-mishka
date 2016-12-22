@@ -1,30 +1,24 @@
-
-.catalog__title{
-  background-color:#f1f1f1;
-  padding:5px 0px;
-  margin-bottom:28px;
-
+.catalog__title {
+  padding: 5px 0px;
+  margin-bottom: 28px;
+  background-color: #f1f1f1;
 }
-.catalog__title-container{
+.catalog__title-container {
   .container();
-  font-family: "OpenSans Bold",sans-serif;
-  font-size: 27px;
-  line-height: 30px;
-  margin-top: 65px;
-  margin-bottom: 72px;
+  margin-top: 66px;
+  margin-bottom: 73px;
   text-align: center;
 }
-
-.order__title-container{
-
+.order__title-container {
   margin-top: 65px;
   margin-bottom: 72px;
-
 }
-
 .catalog__wrapper {
   .container();
+  display: flex;
+  flex-direction: column;
 }
+
 @media @mobile-widths-only {
   .catalog {
     margin-top: 78px;
@@ -32,21 +26,41 @@
   .page-header--nojs + .catalog {
     margin-top: 0;
   }
+  .catalog__title-container {
+    font-size: 27px;
+    line-height: 30px;
+  }
 }
 @media @tablet-widths {
   .catalog-item {
     display: flex;
   }
-  .catalog {
+  .catalog__title-container {
+    margin-top: 93px;
+    margin-bottom: 84px;
+  }
+  .catalog__title {
+    background: #f1f1f1 url("../img/bg-zigzag-fill.svg") center bottom repeat-x;
+    background-size: auto 21px;
+    margin-bottom: 70px;
 
   }
 }
 @media @desktop-widths {
   .catalog__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .catalog-item {
     display: block;
+    margin-bottom: 55px;
+  }
+  .catalog__title {
+    background-size: auto auto;
+    margin-bottom: 110px;
+  }
+  .catalog__title-container {
+    margin-bottom: 113px;
   }
 }

@@ -1,7 +1,3 @@
-.social-links {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
 .social-links__list {
   padding: 0;
   margin: 0;
@@ -17,11 +13,11 @@
   margin-right: 35px;
 }
 .social-links__item a:hover svg {
-  fill:#46c1ae;
+  fill: #46c1ae;
 }
 .social-links__item a:active svg {
-  fill:#46c1ae;
-  fill-opacity:0.3;
+  fill: #46c1ae;
+  fill-opacity: 0.3;
 }
 .social-links__item:last-child a {
   margin-right: 0;
@@ -31,6 +27,16 @@
 }
 @media @mobile-widths-only {
   .social-links__list {
-      margin: 0 56px;
+    margin: 0 56px;
+  }
+  .social-links {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+@media @tablet-widths {
+  .social-links {
+    align-self: center;
+    margin-right: 84px;
   }
 }
