@@ -4,7 +4,7 @@ var overlay = document.querySelector(".modal-overlay");
 
 catalog.onclick = function(event) {
   var target = event.target;
-   if (target.tagName === 'svg') {
+    if (target.tagName === 'svg') {
     target = target.parentNode;
   }
   while (target != catalog) {
