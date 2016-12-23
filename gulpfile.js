@@ -10,7 +10,7 @@ var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var run=require("run-sequence");
+var run = require("run-sequence");
 var del = require("del");
 
 gulp.task("style", function() {
@@ -22,22 +22,14 @@ gulp.task("style", function() {
         "last 2 versions"
       ]}),
      mqpacker({
-      sort: false
+      sort: true
      })
     ]))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
-});
-
-gulp.task("serve", function() {
-  server.init({
-    server: "build"
-  });
-
-  gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("images", function() {
@@ -49,9 +41,20 @@ gulp.task("images", function() {
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("build",function(fn) {
-  run("clean","copy","style","images",fn);
+gulp.task("serve", function() {
+  server.init({
+    server: "build",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("*.html").on("change", server.reload);
 });
+
+
 gulp.task("copy", function() {
  return gulp.src([
   "fonts/**/*.{woff,woff2}",
@@ -65,4 +68,8 @@ gulp.task("copy", function() {
 });
 gulp.task("clean", function() {
  return del("build");
+});
+
+gulp.task("build",function(fn) {
+  run("clean","copy","style","images",fn);
 });
