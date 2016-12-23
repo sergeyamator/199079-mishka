@@ -28,9 +28,6 @@
 .second-nav__item:nth-child(1):active .second-nav__icon-interior {
   fill: #44c0aa;
 }
-.second-nav__item:hover {
-  transform: scaleY(1.05) translateY(-5px);
-}
 .second-nav__item {
   transition: 0.3s;
 }
@@ -68,6 +65,12 @@
   fill: #35a999;
   fill-rule: evenodd;
 }
+@media @mobile-widths-only {
+  .second-nav__item:hover {
+    transform: scaleY(1.1);
+    transform-origin: bottom;
+  }
+}
 @media @tablet-widths {
   .second-nav__list {
     display: flex;
@@ -79,5 +82,8 @@
     font-size: 20px;
     line-height: 30px;
     padding: 28px 27px 37px 38px;
+  }
+  .second-nav__item:hover {
+    transform: translateY(-5px);
   }
 }

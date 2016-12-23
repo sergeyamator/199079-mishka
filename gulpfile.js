@@ -21,9 +21,9 @@ gulp.task("style", function() {
       autoprefixer({browsers: [
         "last 2 versions"
       ]}),
-     mqpacker({
-      sort: true
-     })
+      mqpacker({
+        sort: true
+      })
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream())
@@ -56,18 +56,18 @@ gulp.task("serve", function() {
 
 
 gulp.task("copy", function() {
- return gulp.src([
-  "fonts/**/*.{woff,woff2}",
-  "img/**",
-  "js/**",
-  "*.html"
-  ], {
-    base: "."
+  return gulp.src([
+    "fonts/**/*.{woff,woff2}",
+    "img/**",
+    "js/**",
+    "*.html"
+    ], {
+      base: "."
   })
-   .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build"));
 });
 gulp.task("clean", function() {
- return del("build");
+  return del("build");
 });
 
 gulp.task("build",function(fn) {
