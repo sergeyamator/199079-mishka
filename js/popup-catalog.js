@@ -2,7 +2,7 @@ var catalog = document.querySelector(".catalog__wrapper");
 var popup = document.querySelector(".modal-form");
 var overlay = document.querySelector(".modal-overlay");
 
-catalog.onclick = function(event) {
+catalog.addEventListener("click", function(event) {
   var target = event.target;
     if (target.tagName === 'svg') {
     target = target.parentNode;
@@ -14,7 +14,7 @@ catalog.onclick = function(event) {
     }
     target = target.parentNode;
   }
-}
+});
 function modal_form_show(event) {
   event.preventDefault();
   popup.classList.add("modal-form-show");
